@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?attr/backgroundcolor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        app:titleTextColor="?attr/tabselectcolor"
+        android:background="?attr/backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.cardview.widget.CardView
+        android:background="?attr/cardbackground"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="?attr/backgroundcolor"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Bật chế độ ban đêm"
+                android:textColor="?attr/textcolor"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Switch
+                android:id="@+id/switch_dark"
+                android:text="Night mode"
+                android:layout_marginTop="8dp"
+                android:textColor="?attr/textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="?attr/cardbackground"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_taikhoan_setting"
+            android:background="?attr/cardbackground"
+            android:text="Tài khoản"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/user_setting"
+            android:drawableRight="@drawable/next"
+            android:drawablePadding="10dp"
+            android:textColor="?attr/textcolor"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
